@@ -180,9 +180,6 @@
                 "parameters": {
                     "app_service_name": {
                         "value": "[concat(parameters('base_name'), '-app')]"
-                    },
-                    "depends_on": {
-                        "value": "[resourceId('Microsoft.Web/sites', concat(parameters('base_name'), '-app'))]"
                     }
                 }
             }
