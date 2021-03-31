@@ -169,7 +169,7 @@
             }
         },
         {
-            "name": "appSettingValues",
+            "name": "linkedTemplate",
             "type": "Microsoft.Resources/deployments",
             "apiVersion": "2020-10-01",
             "properties": {
@@ -178,12 +178,12 @@
                     "relativePath": "appsettings-prod.json"
                 },
                 "parameters": {
-                  "app_service_name": {
-                    "value": "[concat(parameters('base_name'), '-app', '/appsettings')]"
-                  },
-                  "depends_on": {
-                    "value": "[resourceId('Microsoft.Web/sites', concat(parameters('base_name'), '-app'))]"
-                  }
+                    "app_service_name": {
+                        "value": "[concat(parameters('base_name'), '-app', '/appsettings')]"
+                    },
+                    "depends_on": {
+                        "value": "[resourceId('Microsoft.Web/sites', concat(parameters('base_name'), '-app'))]"
+                    }
                 }
             }
         }
