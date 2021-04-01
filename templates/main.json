@@ -62,13 +62,13 @@
                 "siteConfig": {
                     "appSettings": [
                         {
-                            "name": "EmbeddedSetting1",
+                            "name": "OriginalSetting1",
                             "value": "some random value"
                         }
                     ],
                     "connectionStrings": [
                         {
-                            "name": "MyConnectionString",
+                            "name": "ConnectionStringTest1",
                             "connectionString": "string",
                             "type": "Custom"
                         }
