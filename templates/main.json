@@ -183,7 +183,13 @@
                 "parameters": {
                     "app_service_name": {
                         "value": "[concat(parameters('base_name'), '-app')]"
-                    }
+                    },
+                    "app_settings": [
+                        { 
+                            "name": "EmbeddedSetting1",
+                            "value": "some random value"
+                        } 
+                    ]
                 }
             }
         }
