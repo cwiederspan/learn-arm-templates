@@ -183,18 +183,6 @@
                 "parameters": {
                     "app_service_name": {
                         "value": "[concat(parameters('base_name'), '-app')]"
-                    },
-                    "app_settings": {
-                        "value": [
-                            {
-                                "name": "CustomConfigurationKey1",
-                                "value": "customConfigurationValue1"
-                            },
-                            {
-                                "name": "CustomConfigurationKey2",
-                                "value": "customConfigurationValue2"
-                            }
-                        ]
                     }
                 }
             }
