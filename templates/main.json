@@ -186,8 +186,8 @@
                     },
                     "app_settings": {
                         "value": {
-                            "ParentSetting1": "Finance",
-                            "ParentSetting2": "[concat('test value for ', parameters('base_name'), '-app')]"
+                            "OuterSetting1": "Some dummy value",
+                            "OuterSetting2": "[concat('test value for ', parameters('base_name'), '-app')]"
                         }
                     }
                 }
