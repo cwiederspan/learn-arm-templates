@@ -189,11 +189,11 @@
                             {
                                 "name": "CustomConfigurationKey1",
                                 "value": "customConfigurationValue1"
-                              },
-                              {
-                                 "name": "CustomConfigurationKey2",
-                                 "value": "customConfigurationValue2"
-                              }
+                            },
+                            {
+                                "name": "CustomConfigurationKey2",
+                                "value": "customConfigurationValue2"
+                            }
                         ]
                     }
                 }
