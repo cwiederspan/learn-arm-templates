@@ -183,6 +183,10 @@
                 "parameters": {
                     "app_service_name": {
                         "value": "[concat(parameters('base_name'), '-app')]"
+                    },
+                    "app_settings": {
+                        "ParentSetting1": "Finance",
+                        "ParentSetting2": "Production"
                     }
                 }
             }
