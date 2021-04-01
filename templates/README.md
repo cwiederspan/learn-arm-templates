@@ -3,6 +3,8 @@
 Use [linked templates](https://docs.microsoft.com/en-us/azure/azure-resource-manager/templates/linked-templates?tabs=azure-powershell#linked-template) 
 to merge App Service app settings from multiple configuration files.
 
+## Testing
+
 ```bash
 
 az group create -n cdw-webapp-20210330 -l westus2
@@ -13,3 +15,8 @@ az deployment group create \
 --parameters base_name=cdw-webapp-20210330
 
 ```
+
+## Further Reading
+
+* [Blob Post](https://kalcik.net/2019/11/21/merge-azure-app-service-app-settings-in-arm-template/)
+* [Stack Overflow](https://stackoverflow.com/questions/51392382/arm-template-concatenate-objects)
