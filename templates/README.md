@@ -3,6 +3,12 @@
 Use [linked templates](https://docs.microsoft.com/en-us/azure/azure-resource-manager/templates/linked-templates?tabs=azure-powershell#linked-template) 
 to merge App Service app settings from multiple configuration files.
 
+## Concept
+
+The idea here is that I need to create an App Service using a central, governed template [main.json](main.json) that includes
+some common, baseline app settings, but also need to add environment or app-specific app settings via an external
+[appsettings-prod.json](appsettings-prod.json) file.
+
 ## Testing
 
 ```bash
