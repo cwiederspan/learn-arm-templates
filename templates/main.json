@@ -189,6 +189,14 @@
                             "OuterSetting1": "Some dummy value",
                             "OuterSetting2": "[concat('test value for ', parameters('base_name'), '-app')]"
                         }
+                    },
+                    "connection_strings": {
+                        "value": {
+                            "OuterConnectionString1": {
+                                "value": "My outer conn string 1",
+                                "type": "Custom"
+                            }
+                        }
                     }
                 }
             }
