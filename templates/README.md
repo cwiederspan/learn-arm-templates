@@ -13,12 +13,17 @@ some common, baseline app settings, but also need to add environment or app-spec
 
 ```bash
 
-az group create -n cdw-webapp-20210330 -l westus2
+az group create -n cdw-webapp-20210406 -l westus2
+
+az deployment group validate \
+--resource-group cdw-webapp-20210406 \
+--template-uri https://raw.githubusercontent.com/cwiederspan/learn-arm-templates/master/templates/main.json \
+--parameters base_name=cdw-webapp-20210406
 
 az deployment group create \
---resource-group cdw-webapp-20210330 \
+--resource-group cdw-webapp-20210406 \
 --template-uri https://raw.githubusercontent.com/cwiederspan/learn-arm-templates/master/templates/main.json \
---parameters base_name=cdw-webapp-20210330
+--parameters base_name=cdw-webapp-20210406
 
 ```
 
